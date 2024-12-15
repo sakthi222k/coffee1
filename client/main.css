@@ -1,0 +1,235 @@
+/* LET THE STYLING BEGIN */
+/* font-family: "Miniver", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: space-between;
+  padding: 8px;
+}
+.navbar-title {
+  align-items: center;
+  margin-left: 50px;
+  font-size: 3vmin;
+}
+.navbar-links {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+}
+.navbar-links a:hover {
+  cursor: pointer;
+  color: tan;
+  border-bottom: 1px solid tan;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.navbar-icons i {
+  padding: 10px;
+}
+.navbar-icons i:hover {
+  cursor: pointer;
+  color: tan;
+}
+.navbar-icons p {
+  background-color: brown;
+  border-radius: 100%;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  font-size: 10px;
+}
+#icons {
+  display: none;
+}
+.side-navbar {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -60%;
+  transition: 1s;
+}
+.side-navbar-links {
+  padding: 35px;
+}
+.side-navbar-links p {
+  padding-bottom: 40px;
+}
+.side-navbar-links i {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+}
+.side-navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.side-navbar-links a:hover {
+  cursor: pointer;
+  color: tan;
+  border-bottom: 1px solid tan;
+}
+.side-navbar-links i:hover {
+  cursor: pointer;
+  color: tan;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30px;
+}
+.header-texts{
+  width: 40%;
+}
+.header-texts h1{
+  font-size: 5vmin;
+}
+.header-texts h2{
+  color: tan;
+  padding-bottom: 10px;
+  font-size: 4vmin;
+}
+.header-texts p{
+  color: dimgray;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-bottom: 20px;
+  font-size: 2vmin;
+}
+.btn1{
+  background-color: black;
+  color: white;
+  padding: 8px 25px 8px 25px;
+  border: none;
+  margin-right: 10px;
+}
+.btn2{
+  background-color: tan;
+  color: white;
+  padding: 8px 25px 8px 25px;
+  border: none;
+  margin-right: 10px;
+}
+.btn1,.btn2:hover{
+  cursor: pointer;
+}
+.intro{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(24, 1, 1);
+  color: white;
+  padding: 40px;
+  align-items: center;
+}
+.intro-text{
+  width: 30%;
+}
+.intro-text h6{
+  color: rgb(177, 88, 5);
+  letter-spacing: 2px;
+  font-size: 8px;
+}
+.intro-text h2{
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.intro-text p{
+  color: tan;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.intro-text button{
+  background-color: rgb(177, 88, 5);
+  border: none;
+  color: white;
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}
+.intro img{
+  height: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Media Query */
+@media screen and (max-width: 850px) {
+  .navbar-links a {
+    display: none;
+  }
+  #icon1,
+  #icon2,
+  #icon0{
+    display: none;
+  }
+  #icons {
+    display: block;
+  }
+  .navbar-title {
+    margin-left: 20px;
+  }
+  .icons3 {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+  }
+  .navbar-links {
+    column-gap: 0;
+  }
+  .header{
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-texts{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .header-img img{
+      width: 80%;
+     margin-left: 35px;
+  }
+  .intro{
+    display: block;
+    flex-wrap: wrap;
+
+    text-align: center;
+  }
+  .intro-text{
+    width: 100%;
+    padding-bottom: 35px;
+  }
+  .intro img {
+    width: 100px;
+    height: 200px;
+    padding: 10px;
+  }
+}
